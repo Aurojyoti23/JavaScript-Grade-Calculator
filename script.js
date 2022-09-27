@@ -31,10 +31,10 @@ const func = () => {
 
     if(perce >= 40){
         document.getElementById('showData-1').innerHTML = `<h1 style="color:green;">PASS</h1>`
-        document.getElementById('showData-2').innerHTML = `Out of <strong style="color:green;">${total}</strong> you obtain <strong style="color:green;">${obtain}</strong> geting percentage <strong style="color:green;">${perce}%</strong> <br> Your Grade is <strong style="color:green;">${grades}</strong>.`
+        document.getElementById('showData-2').innerHTML = `Out of <strong style="color:green;">${total}</strong> you obtain <strong style="color:green;">${obtain}</strong> geting percentage <strong style="color:green;">${perce.toFixed(2)}%</strong> <br> Your Grade is <strong style="color:green;">${grades}</strong>.`
     }else if(perce <= 40 && perce>=0){
         document.getElementById('showData-1').innerHTML = `<h1 style="color:red;">FAIL</h1>`
-        document.getElementById('showData-2').innerHTML = `Out of <strong style="color:red;">${total}</strong> you obtain <strong style="color:red;">${obtain}</strong> geting percentage <strong style="color:red;">${perce}%</strong> <br> Your Grade is <strong style="color:red;">${grades}</strong>.`
+        document.getElementById('showData-2').innerHTML = `Out of <strong style="color:red;">${total}</strong> you obtain <strong style="color:red;">${obtain}</strong> geting percentage <strong style="color:red;">${perce.toFixed(2)}%</strong> <br> Your Grade is <strong style="color:red;">${grades}</strong>.`
     }else{
         document.getElementById('showData-1').innerHTML = `<h1 style="color:orange; font-size:18px">ERROR</h1>`
         document.getElementById('showData-2').innerHTML = `Somthing went wrong :)`
